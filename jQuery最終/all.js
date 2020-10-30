@@ -32,7 +32,7 @@ lightbox.option({
     'resizeDuration': 300,
     'wrapAround': true,
     albumLabel:"第%1張，共%2張"
-  })
+})
 
   //top
   $(".top").click(function (e) { 
