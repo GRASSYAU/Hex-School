@@ -1,0 +1,351 @@
+//組件區
+.series-nav-h2 {
+  font-size: 42px;
+  font-family: $font-family-Roboto;
+  font-weight: $Medium-500;
+  color: $font-black;
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+.series-banner-size {
+  width: 49%;
+  height: 309px;
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    width: 50%;
+    height: 144px;
+  }
+}
+.series-products-h2 {
+  font-size: 42px;
+  font-family: $font-family-Roboto;
+  font-weight: $Medium-500;
+  color: $font-black;
+  @media (max-width: 992px) {
+    font-size: 32px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.series-products-h3 {
+  font-size: 32px;
+  font-weight: $Regular-400;
+  margin-bottom: 40px;
+  @media (max-width: 992px) {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+//NAV選單
+.series-nav {
+  li {
+    width: 462px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    border: 1px solid #dcdcdc;
+    border-bottom: 16px solid transparent;
+    cursor: pointer;
+    @media (max-width: 992px) {
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 8px;
+      border-bottom: 8px solid transparent;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    @media (max-width: 767px) {
+      padding-top: 8px;
+      padding-bottom: 4px;
+      border-bottom: 4px solid transparent;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .li-hover {
+    border-bottom: 16px solid $font-primary;
+    @media (max-width: 992px) {
+      border-bottom: 8px solid $font-primary;
+    }
+    @media (max-width: 767px) {
+      border-bottom: 4px solid $font-primary;
+    }
+  }
+}
+
+#all .series-glasses {
+  display: none;
+  //banner
+  .series-banner {
+    justify-content: space-between;
+    margin-bottom: 88px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    .series-banner-img1 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-1.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+    }
+    .series-banner-img2 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-2.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+    }
+  }
+  //products 產品表
+  .series-products {
+    text-align: center;
+    @media (max-width: 767px) {
+      .products {
+        justify-content: center;
+      }
+    }
+    .products-item {
+      width: 255px;
+      margin-bottom: 104px;
+      @media (max-width: 992px) {
+        width: 330px;
+        margin-bottom: 72px;
+        &:nth-child(11),
+        &:nth-child(12) {
+          display: none;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 345px;
+        margin-bottom: 69px;
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12) {
+          display: none;
+        }
+      }
+    }
+    h4 {
+      font-size: 24px;
+      font-family: $font-family-Roboto;
+      font-weight: $Regular-400;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    h5 {
+      font-size: 24px;
+      font-family: $font-family-Roboto;
+      font-weight: $Medium-500;
+      color: $font-primary;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    .products-color-1 {
+      width: 24px;
+      height: 24px;
+      background: #5f3e2d;
+      border-radius: 4px;
+    }
+    .products-color-2 {
+      width: 24px;
+      height: 24px;
+      background: #b75929;
+      border-radius: 4px;
+    }
+    .series-page {
+      li {
+        border: 1px solid #555555;
+        margin-bottom: 156px;
+        @media (max-width: 992px) {
+          margin-bottom: 104px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 56px;
+        }
+      }
+      a {
+        display: block;
+        font-size: 19px;
+        padding: 10px 12px 12px 12px;
+        color: #000;
+        transition: all ease 0.5s;
+        @media (max-width: 767px) {
+          font-size: 12px;
+          padding: 8px 10px;
+        }
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+      .series-page-list {
+        font-size: 18px;
+        padding: 10px 17px 13px 14px;
+        @media (max-width: 767px) {
+          font-size: 11px;
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
+}
+
+#all .series-glasses2 {
+  //banner
+  .series-banner {
+    justify-content: space-between;
+    margin-bottom: 88px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    .series-banner-img1 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+    }
+    .series-banner-img2 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+    }
+  }
+  //products 產品表
+  .series-products {
+    text-align: center;
+    @media (max-width: 767px) {
+      .products {
+        justify-content: center;
+      }
+    }
+    .products-item {
+      width: 350px;
+      margin-bottom: 104px;
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10) {
+        display: none;
+      }
+      @media (max-width: 992px) {
+        width: 330px;
+        margin-bottom: 72px;
+        &:nth-child(11),
+        &:nth-child(12) {
+          display: none;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 345px;
+        margin-bottom: 69px;
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10) {
+          display: none;
+        }
+      }
+    }
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+      h4 {
+        font-size: 24px;
+        font-family: $font-family-Roboto;
+        font-weight: $Regular-400;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      h5 {
+        font-size: 24px;
+        font-family: $font-family-Roboto;
+        font-weight: $Medium-500;
+        color: $font-primary;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .products-color-1 {
+      width: 24px;
+      height: 24px;
+      background: #5f3e2d;
+      border-radius: 4px;
+    }
+    .products-color-2 {
+      width: 24px;
+      height: 24px;
+      background: #b75929;
+      border-radius: 4px;
+    }
+    .series-page {
+      li {
+        border: 1px solid #555555;
+        margin-bottom: 156px;
+        @media (max-width: 992px) {
+          margin-bottom: 104px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 56px;
+        }
+      }
+      a {
+        display: block;
+        font-size: 19px;
+        padding: 10px 12px 12px 12px;
+        color: #000;
+        transition: all ease 0.5s;
+        @media (max-width: 767px) {
+          font-size: 12px;
+          padding: 8px 10px;
+        }
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+      .series-page-list {
+        font-size: 18px;
+        padding: 10px 17px 13px 14px;
+        @media (max-width: 767px) {
+          font-size: 11px;
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
+}
+
+#all .open {
+  display: block;
+}

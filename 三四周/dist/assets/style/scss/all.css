@@ -61,12 +61,9 @@ img {
           box-sizing: border-box; }
 
 body {
-  line-height: 1.5; }
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400; }
 
 .container {
   max-width: 1110px;
@@ -77,16 +74,49 @@ body {
   @media (max-width: 767px) {
     .container {
       max-width: 540px; } }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 345px; } }
 
-.font-style-xs {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400; }
+.font-Roboto {
+  font-family: "Roboto", sans-serif; }
 
-.font-style-s {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400; }
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fxd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.fx-ww {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.jc-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.jc-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.mr-8 {
+  margin-right: 8px; }
 
 .header {
   background: #aa0601;
@@ -140,10 +170,7 @@ body {
     text-align: center; }
     .header .logo {
       margin: 0 auto;
-      padding: 10px 0px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      padding: 10px 0px; }
       .header .logo a {
         display: block;
         width: 48px;
@@ -157,9 +184,6 @@ body {
       .header .nav-bar li a {
         padding: 0px; } }
 
-main {
-  height: 840px; }
-
 .footer {
   background: #aa0601; }
   .footer .footer-content {
@@ -171,7 +195,7 @@ main {
       .footer .footer-content {
         padding-top: 24px;
         padding-bottom: 17px; } }
-    .footer .footer-content .footer-item li a {
+    .footer .footer-content .footer-item a {
       color: #fff;
       display: block;
       padding: 48px 0px 39px 0px;
@@ -179,7 +203,7 @@ main {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .footer .footer-content .footer-item li a:hover {
+      .footer .footer-content .footer-item a:hover {
         color: #000; }
     @media (max-width: 992px) {
       .footer .footer-content .footer-item li a {
@@ -338,5 +362,760 @@ main {
             transition: all 0.3s ease; }
             .footer .footer-copyright .copyright ul li a:hover {
               color: #000; } }
+
+.font-style-xs {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+.font-style-s {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.font-style-m {
+  font-size: 48px;
+  font-weight: 700;
+  color: #650300; }
+
+.subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #650300;
+  margin-bottom: 60px; }
+  @media (max-width: 992px) {
+    .subtitle {
+      font-size: 32px;
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .subtitle {
+      font-size: 24px;
+      line-height: 48px;
+      margin-bottom: 20px; } }
+
+.series-h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #aa0601;
+  font-weight: 900;
+  font-style: italic; }
+  @media (max-width: 992px) {
+    .series-h3 {
+      font-size: 28px; } }
+
+.series-mobile-h3 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #ffffff; }
+
+main .banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") center center no-repeat;
+  background-size: cover;
+  height: 840px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  main .banner .slogan {
+    text-align: right; }
+    main .banner .slogan p {
+      font-size: 36px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400;
+      color: #650300; }
+    main .banner .slogan h2 {
+      font-size: 64px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 700;
+      color: #650300; }
+  @media (max-width: 992px) {
+    main .banner .slogan p {
+      font-size: 20px; }
+    main .banner .slogan h2 {
+      font-size: 48px; } }
+  @media (max-width: 767px) {
+    main .banner {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png") center center no-repeat;
+      background-size: cover;
+      height: 394px; }
+      main .banner .slogan p {
+        font-size: 16px;
+        line-height: 30px; }
+      main .banner .slogan h2 {
+        font-size: 32px;
+        line-height: 72px; } }
+
+main .about {
+  background: #aa06010d;
+  margin-bottom: 64px; }
+  @media (max-width: 767px) {
+    main .about {
+      margin-bottom: 32px; } }
+  main .about .container {
+    padding: 64px 0px 80px 0px;
+    text-align: center; }
+  main .about .about_item {
+    width: 20%; }
+    main .about .about_item img {
+      margin: 0 auto;
+      height: 100px;
+      margin-bottom: 40px; }
+    main .about .about_item h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #650300; }
+    main .about .about_item p {
+      text-align: left; }
+  @media (max-width: 992px) {
+    main .about .container {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+
+@media (max-width: 992px) and (max-width: 767px) {
+  main .about .container {
+    padding-top: 32px;
+    padding-bottom: 12px; } }
+  @media (max-width: 992px) {
+    main .about .about_item {
+      width: 35%;
+      padding-bottom: 40px; } }
+  @media (max-width: 992px) and (max-width: 767px) {
+    main .about .about_item {
+      width: 70%; } }
+  @media (max-width: 992px) {
+      main .about .about_item img {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px; }
+      main .about .about_item h2 {
+        font-size: 20px; }
+    main .about .about_item:nth-child(1) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    main .about .about_item:nth-child(4) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+.series {
+  text-align: center;
+  padding-bottom: 48px; }
+  @media (max-width: 992px) {
+    .series {
+      padding-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .series {
+      padding-bottom: 24px; }
+      .series ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+  .series li {
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .series li {
+        margin-bottom: 8px; } }
+    .series li .optical-img {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png") center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 992px) {
+        .series li .optical-img {
+          width: 390px;
+          height: 168px; } }
+      @media (max-width: 767px) {
+        .series li .optical-img {
+          width: 345px;
+          height: 134px; } }
+    .series li .sunglasses-img {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true") center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media (max-width: 992px) {
+        .series li .sunglasses-img {
+          width: 390px;
+          height: 168px; } }
+      @media (max-width: 767px) {
+        .series li .sunglasses-img {
+          width: 345px;
+          height: 134px; } }
+    .series li .functional-img {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true") center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 992px) {
+        .series li .functional-img {
+          width: 390px;
+          height: 168px; } }
+      @media (max-width: 767px) {
+        .series li .functional-img {
+          width: 345px;
+          height: 134px; } }
+    .series li .series-pc-pad {
+      margin: 0 30px; }
+      .series li .series-pc-pad img {
+        margin-right: 8px; }
+      @media (max-width: 992px) {
+        .series li .series-pc-pad img {
+          width: 32px;
+          height: 25px; } }
+      @media (max-width: 767px) {
+        .series li .series-pc-pad {
+          display: none; } }
+    .series li .series-Mobile img,
+    .series li .series-Mobile h3 {
+      display: none; }
+      @media (max-width: 767px) {
+        .series li .series-Mobile img,
+        .series li .series-Mobile h3 {
+          display: block; } }
+  .series li:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    @media (max-width: 992px) {
+      .series li:nth-child(even) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+
+.design {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .design {
+      padding-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .design {
+      padding-bottom: 32px; }
+      .design ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .design ul li:nth-child(1) {
+          margin-bottom: 16px; } }
+  .design h2 {
+    color: #ffffff;
+    margin: 0px;
+    padding-top: 64px;
+    padding-bottom: 60px; }
+    @media (max-width: 992px) {
+      .design h2 {
+        padding-top: 40px;
+        padding-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .design h2 {
+        padding-top: 32px;
+        padding-bottom: 20px; } }
+  .design h3 {
+    font-size: 72px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #aa0601; }
+    @media (max-width: 992px) {
+      .design h3 {
+        font-size: 32px; } }
+  .design .design-img-size {
+    width: 540px;
+    height: 472px; }
+    @media (max-width: 992px) {
+      .design .design-img-size {
+        width: 330px;
+        height: 280px; } }
+    @media (max-width: 767px) {
+      .design .design-img-size {
+        width: 345px;
+        height: 284px; } }
+  .design .double-img {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=truehttps://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true") center center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: screen; }
+  .design .youth-img {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png") center center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: screen; }
+
+.recommend {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  text-align: center; }
+  @media (max-width: 992px) {
+    .recommend {
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .recommend ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .recommend ul li:nth-child(1) {
+          margin-bottom: 28px; } }
+  @media (max-width: 767px) {
+    .recommend {
+      margin-top: 32px;
+      margin-bottom: 32px; }
+      .recommend ul {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .recommend ul li:nth-child(1),
+        .recommend ul li:nth-child(2),
+        .recommend ul li:nth-child(3) {
+          margin-bottom: 16px; } }
+  .recommend li {
+    max-width: 255px; }
+    @media (max-width: 992px) {
+      .recommend li {
+        max-width: 330px; } }
+    @media (max-width: 767px) {
+      .recommend li {
+        max-width: 345px; } }
+  .recommend div {
+    border: 1px solid #dee2e6;
+    padding: 14px 16px 15px 16px; }
+    @media (max-width: 992px) {
+      .recommend div {
+        padding: 16px; } }
+
+.recommend div {
+  color: #212529;
+  text-align: left; }
+  .recommend div h3 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 7px; }
+  .recommend div p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  .recommend div h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #707070; }
+
+.connection-container {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto; }
+  @media (max-width: 992px) {
+    .connection-container {
+      max-width: 450px; } }
+  @media (max-width: 767px) {
+    .connection-container {
+      max-width: 345px; } }
+
+.connection {
+  background: #aa06010d;
+  padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .connection {
+      padding-bottom: 40px; } }
+  .connection h2 {
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 24px; }
+    @media (max-width: 992px) {
+      .connection h2 {
+        padding-top: 40px;
+        margin-bottom: 16px; } }
+    @media (max-width: 767px) {
+      .connection h2 {
+        padding-top: 32px;
+        margin-bottom: 20px; } }
+  .connection p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 20px; }
+    @media (max-width: 992px) {
+      .connection p {
+        font-size: 16px;
+        margin-bottom: 12px; } }
+  @media (max-width: 992px) {
+    .connection label {
+      font-size: 14px; } }
+  .connection input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px; }
+    @media (max-width: 992px) {
+      .connection input {
+        height: 36px;
+        margin-bottom: 8px; } }
+  .connection textarea {
+    width: 100%;
+    height: 136px;
+    margin-bottom: 16px; }
+    @media (max-width: 992px) {
+      .connection textarea {
+        height: 100px; } }
+  .connection .checkbox {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    margin-right: 4px; }
+    @media (max-width: 992px) {
+      .connection .checkbox {
+        width: 18px;
+        height: 18px; } }
+  .connection .btn {
+    width: 350px;
+    height: 54px;
+    margin: 0 auto;
+    background: #aa0601;
+    color: #ffffff;
+    border: none;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    margin-top: 42px; }
+    .connection .btn:hover {
+      background: #650300; }
+    @media (max-width: 992px) {
+      .connection .btn {
+        width: 210px;
+        height: 36px;
+        margin-top: 20px; } }
+    @media (max-width: 767px) {
+      .connection .btn {
+        width: 165px;
+        margin-top: 24px; } }
+
+.series-nav-h2 {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #000000; }
+  @media (max-width: 992px) {
+    .series-nav-h2 {
+      font-size: 28px; } }
+  @media (max-width: 767px) {
+    .series-nav-h2 {
+      font-size: 14px; } }
+
+.series-banner-size {
+  width: 49%;
+  height: 309px; }
+  @media (max-width: 992px) {
+    .series-banner-size {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .series-banner-size {
+      width: 50%;
+      height: 144px; } }
+
+.series-products-h2 {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #000000; }
+  @media (max-width: 992px) {
+    .series-products-h2 {
+      font-size: 32px; } }
+  @media (max-width: 767px) {
+    .series-products-h2 {
+      font-size: 20px; } }
+
+.series-products-h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 40px; }
+  @media (max-width: 992px) {
+    .series-products-h3 {
+      font-size: 24px;
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .series-products-h3 {
+      font-size: 16px;
+      margin-bottom: 20px; } }
+
+.series-nav li {
+  width: 462px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  border: 1px solid #dcdcdc;
+  border-bottom: 16px solid transparent;
+  cursor: pointer; }
+  @media (max-width: 992px) {
+    .series-nav li {
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 8px;
+      border-bottom: 8px solid transparent; }
+      .series-nav li img {
+        width: 32px;
+        height: 32px; } }
+  @media (max-width: 767px) {
+    .series-nav li {
+      padding-top: 8px;
+      padding-bottom: 4px;
+      border-bottom: 4px solid transparent; }
+      .series-nav li img {
+        width: 15px;
+        height: 15px; } }
+
+.series-nav .li-hover {
+  border-bottom: 16px solid #aa0601; }
+  @media (max-width: 992px) {
+    .series-nav .li-hover {
+      border-bottom: 8px solid #aa0601; } }
+  @media (max-width: 767px) {
+    .series-nav .li-hover {
+      border-bottom: 4px solid #aa0601; } }
+
+#all .series-glasses {
+  display: none; }
+  #all .series-glasses .series-banner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 88px; }
+    @media (max-width: 992px) {
+      #all .series-glasses .series-banner {
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      #all .series-glasses .series-banner {
+        margin-bottom: 30px; } }
+    #all .series-glasses .series-banner .series-banner-img1 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-1.png?raw=true") center center no-repeat;
+      background-size: cover; }
+    #all .series-glasses .series-banner .series-banner-img2 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-2.png?raw=true") center center no-repeat;
+      background-size: cover; }
+  #all .series-glasses .series-products {
+    text-align: center; }
+    @media (max-width: 767px) {
+      #all .series-glasses .series-products .products {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    #all .series-glasses .series-products .products-item {
+      width: 255px;
+      margin-bottom: 104px; }
+      @media (max-width: 992px) {
+        #all .series-glasses .series-products .products-item {
+          width: 330px;
+          margin-bottom: 72px; }
+          #all .series-glasses .series-products .products-item:nth-child(11), #all .series-glasses .series-products .products-item:nth-child(12) {
+            display: none; } }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products .products-item {
+          width: 345px;
+          margin-bottom: 69px; }
+          #all .series-glasses .series-products .products-item:nth-child(5), #all .series-glasses .series-products .products-item:nth-child(6), #all .series-glasses .series-products .products-item:nth-child(7), #all .series-glasses .series-products .products-item:nth-child(8), #all .series-glasses .series-products .products-item:nth-child(9), #all .series-glasses .series-products .products-item:nth-child(10), #all .series-glasses .series-products .products-item:nth-child(11), #all .series-glasses .series-products .products-item:nth-child(12) {
+            display: none; } }
+    #all .series-glasses .series-products h4 {
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400; }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products h4 {
+          font-size: 16px; } }
+    #all .series-glasses .series-products h5 {
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #aa0601; }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products h5 {
+          font-size: 16px; } }
+    #all .series-glasses .series-products .products-color-1 {
+      width: 24px;
+      height: 24px;
+      background: #5f3e2d;
+      border-radius: 4px; }
+    #all .series-glasses .series-products .products-color-2 {
+      width: 24px;
+      height: 24px;
+      background: #b75929;
+      border-radius: 4px; }
+    #all .series-glasses .series-products .series-page li {
+      border: 1px solid #555555;
+      margin-bottom: 156px; }
+      @media (max-width: 992px) {
+        #all .series-glasses .series-products .series-page li {
+          margin-bottom: 104px; } }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products .series-page li {
+          margin-bottom: 56px; } }
+    #all .series-glasses .series-products .series-page a {
+      display: block;
+      font-size: 19px;
+      padding: 10px 12px 12px 12px;
+      color: #000;
+      -webkit-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products .series-page a {
+          font-size: 12px;
+          padding: 8px 10px; } }
+      #all .series-glasses .series-products .series-page a:hover {
+        background: #000;
+        color: #fff; }
+    #all .series-glasses .series-products .series-page .series-page-list {
+      font-size: 18px;
+      padding: 10px 17px 13px 14px; }
+      @media (max-width: 767px) {
+        #all .series-glasses .series-products .series-page .series-page-list {
+          font-size: 11px;
+          padding: 8px 10px; } }
+
+#all .series-glasses2 .series-banner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 88px; }
+  @media (max-width: 992px) {
+    #all .series-glasses2 .series-banner {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    #all .series-glasses2 .series-banner {
+      margin-bottom: 30px; } }
+  #all .series-glasses2 .series-banner .series-banner-img1 {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true") center center no-repeat;
+    background-size: cover; }
+  #all .series-glasses2 .series-banner .series-banner-img2 {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true") center center no-repeat;
+    background-size: cover; }
+
+#all .series-glasses2 .series-products {
+  text-align: center; }
+  @media (max-width: 767px) {
+    #all .series-glasses2 .series-products .products {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  #all .series-glasses2 .series-products .products-item {
+    width: 350px;
+    margin-bottom: 104px; }
+    #all .series-glasses2 .series-products .products-item:nth-child(7), #all .series-glasses2 .series-products .products-item:nth-child(8), #all .series-glasses2 .series-products .products-item:nth-child(9), #all .series-glasses2 .series-products .products-item:nth-child(10) {
+      display: none; }
+    @media (max-width: 992px) {
+      #all .series-glasses2 .series-products .products-item {
+        width: 330px;
+        margin-bottom: 72px; }
+        #all .series-glasses2 .series-products .products-item:nth-child(11), #all .series-glasses2 .series-products .products-item:nth-child(12) {
+          display: none; } }
+    @media (max-width: 767px) {
+      #all .series-glasses2 .series-products .products-item {
+        width: 345px;
+        margin-bottom: 69px; }
+        #all .series-glasses2 .series-products .products-item:nth-child(4), #all .series-glasses2 .series-products .products-item:nth-child(5), #all .series-glasses2 .series-products .products-item:nth-child(6), #all .series-glasses2 .series-products .products-item:nth-child(7), #all .series-glasses2 .series-products .products-item:nth-child(8), #all .series-glasses2 .series-products .products-item:nth-child(9), #all .series-glasses2 .series-products .products-item:nth-child(10) {
+          display: none; } }
+  #all .series-glasses2 .series-products div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    #all .series-glasses2 .series-products div h4 {
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400; }
+      @media (max-width: 767px) {
+        #all .series-glasses2 .series-products div h4 {
+          font-size: 16px; } }
+    #all .series-glasses2 .series-products div h5 {
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #aa0601; }
+      @media (max-width: 767px) {
+        #all .series-glasses2 .series-products div h5 {
+          font-size: 16px; } }
+  #all .series-glasses2 .series-products .products-color-1 {
+    width: 24px;
+    height: 24px;
+    background: #5f3e2d;
+    border-radius: 4px; }
+  #all .series-glasses2 .series-products .products-color-2 {
+    width: 24px;
+    height: 24px;
+    background: #b75929;
+    border-radius: 4px; }
+  #all .series-glasses2 .series-products .series-page li {
+    border: 1px solid #555555;
+    margin-bottom: 156px; }
+    @media (max-width: 992px) {
+      #all .series-glasses2 .series-products .series-page li {
+        margin-bottom: 104px; } }
+    @media (max-width: 767px) {
+      #all .series-glasses2 .series-products .series-page li {
+        margin-bottom: 56px; } }
+  #all .series-glasses2 .series-products .series-page a {
+    display: block;
+    font-size: 19px;
+    padding: 10px 12px 12px 12px;
+    color: #000;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
+    @media (max-width: 767px) {
+      #all .series-glasses2 .series-products .series-page a {
+        font-size: 12px;
+        padding: 8px 10px; } }
+    #all .series-glasses2 .series-products .series-page a:hover {
+      background: #000;
+      color: #fff; }
+  #all .series-glasses2 .series-products .series-page .series-page-list {
+    font-size: 18px;
+    padding: 10px 17px 13px 14px; }
+    @media (max-width: 767px) {
+      #all .series-glasses2 .series-products .series-page .series-page-list {
+        font-size: 11px;
+        padding: 8px 10px; } }
+
+#all .open {
+  display: block; }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,59 @@
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1110px;
+  // width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    max-width: 690px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 540px;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 345px;
+  }
+}
+
+.font-Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fxd-c {
+  flex-direction: column;
+}
+
+.fx-ww {
+  flex-wrap: wrap;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}

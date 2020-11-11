@@ -1,0 +1,529 @@
+//字形
+.font-style-xs {
+  font-family: $font-family-Noto;
+  font-size: 16px;
+  font-weight: $Regular-400;
+}
+
+.font-style-s {
+  font-family: $font-family-Noto;
+  font-size: 20px;
+  font-weight: $Regular-400;
+}
+
+.font-style-m {
+  font-size: 48px;
+  font-weight: $Bold-700;
+  color: $font-secondary;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: $Bold-700;
+  color: $font-secondary;
+  margin-bottom: 60px;
+
+  @media (max-width: 992px) {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+.series-h3 {
+  font-family: $font-family-Roboto;
+  font-size: 48px;
+  color: $font-primary;
+  font-weight: $Black-900;
+  font-style: italic;
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+}
+
+.series-mobile-h3 {
+  font-size: 28px;
+  font-family: $font-family-Roboto;
+  font-weight: $Black-900;
+  font-style: italic;
+  color: #ffffff;
+}
+
+//banner 看得清，才能看得遠
+main .banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png")
+    center center no-repeat;
+  background-size: cover;
+  height: 840px;
+  align-items: center;
+
+  .slogan {
+    text-align: right;
+
+    p {
+      font-size: 36px;
+      font-family: $font-family-Noto;
+      font-weight: $Regular-400;
+      color: $font-secondary;
+    }
+
+    h2 {
+      font-size: 64px;
+      font-family: $font-family-Noto;
+      font-weight: $Bold-700;
+      color: $font-secondary;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .slogan p {
+      font-size: 20px;
+    }
+
+    .slogan h2 {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png")
+      center center no-repeat;
+    background-size: cover;
+    height: 394px;
+
+    .slogan p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    .slogan h2 {
+      font-size: 32px;
+      line-height: 72px;
+    }
+  }
+}
+
+//home-about 用專業的心，做專業的事
+main .about {
+  background: #aa06010d;
+  margin-bottom: 64px;
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  .container {
+    padding: 64px 0px 80px 0px;
+    text-align: center;
+  }
+
+  .about_item {
+    width: 20%;
+
+    img {
+      margin: 0 auto;
+      height: 100px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: $Bold-700;
+      color: $font-secondary;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      .container {
+        padding-top: 32px;
+        padding-bottom: 12px;
+      }
+    }
+
+    .about_item {
+      width: 35%;
+      padding-bottom: 40px;
+
+      @media (max-width: 767px) {
+        width: 70%;
+      }
+
+      img {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    .about_item:nth-child(1) {
+      order: 1;
+    }
+
+    .about_item:nth-child(4) {
+      order: 1;
+    }
+  }
+}
+
+//series 經典系列鏡框
+.series {
+  text-align: center;
+  padding-bottom: 48px;
+  @media (max-width: 992px) {
+    padding-bottom: 32px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 24px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  li {
+    margin-bottom: 32px;
+    @media (max-width: 992px) {
+      margin-bottom: 8px;
+    }
+    .optical-img {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png")
+        center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 992px) {
+        width: 390px;
+        height: 168px;
+      }
+      @media (max-width: 767px) {
+        width: 345px;
+        height: 134px;
+      }
+    }
+
+    .sunglasses-img {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 992px) {
+        width: 390px;
+        height: 168px;
+      }
+      @media (max-width: 767px) {
+        width: 345px;
+        height: 134px;
+      }
+    }
+
+    .functional-img {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true")
+        center center no-repeat;
+      background-size: cover;
+      width: 635px;
+      height: 320px;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 992px) {
+        width: 390px;
+        height: 168px;
+      }
+      @media (max-width: 767px) {
+        width: 345px;
+        height: 134px;
+      }
+    }
+
+    .series-pc-pad {
+      margin: 0 30px;
+      img {
+        margin-right: 8px;
+      }
+      @media (max-width: 992px) {
+        img {
+          width: 32px;
+          height: 25px;
+        }
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .series-Mobile img,
+    .series-Mobile h3 {
+      display: none;
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+
+  li:nth-child(even) {
+    flex-direction: row-reverse;
+    @media (max-width: 992px) {
+      flex-direction: row;
+    }
+  }
+}
+
+//design 聯名設計鏡框
+.design {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png")
+    center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  @media (max-width: 992px) {
+    padding-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 32px;
+    ul {
+      flex-direction: column;
+      li:nth-child(1) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  h2 {
+    color: #ffffff;
+    margin: 0px;
+    padding-top: 64px;
+    padding-bottom: 60px;
+    @media (max-width: 992px) {
+      padding-top: 40px;
+      padding-bottom: 32px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 32px;
+      padding-bottom: 20px;
+    }
+  }
+  h3 {
+    font-size: 72px;
+    font-family: $font-family-Roboto;
+    font-weight: $Bold-700;
+    color: $font-primary;
+    @media (max-width: 992px) {
+      font-size: 32px;
+    }
+  }
+  .design-img-size {
+    width: 540px;
+    height: 472px;
+    @media (max-width: 992px) {
+      width: 330px;
+      height: 280px;
+    }
+    @media (max-width: 767px) {
+      width: 345px;
+      height: 284px;
+    }
+  }
+  //design聯名設計鏡框
+  .double-img {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=truehttps://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true")
+      center center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); //白色透明片
+    background-blend-mode: screen; //使兩張圖片合在一起，這裡是用圖片+顏色
+  }
+  .youth-img {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png")
+      center center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); //白色透明片
+    background-blend-mode: screen; //使兩張圖片合在一起，這裡是用圖片+顏色
+  }
+}
+
+//recommend 顧客推薦
+.recommend {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  text-align: center;
+  @media (max-width: 992px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+      flex-wrap: wrap;
+      li:nth-child(1) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    ul {
+      justify-content: center;
+      li:nth-child(1),
+      li:nth-child(2),
+      li:nth-child(3) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  li {
+    max-width: 255px;
+    @media (max-width: 992px) {
+      max-width: 330px;
+    }
+    @media (max-width: 767px) {
+      max-width: 345px;
+    }
+  }
+  div {
+    border: 1px solid #dee2e6;
+    padding: 14px 16px 15px 16px;
+    @media (max-width: 992px) {
+      padding: 16px;
+    }
+  }
+}
+.recommend div {
+  color: #212529;
+  text-align: left;
+  h3 {
+    font-size: 14px;
+    font-weight: $Medium-500;
+    font-family: $font-family-Roboto;
+    margin-bottom: 7px;
+  }
+  p {
+    font-family: $font-family-Roboto;
+    font-weight: $Regular-400;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-family: $font-family-Roboto;
+    font-weight: $Regular-400;
+    font-size: 14px;
+    color: #707070;
+  }
+}
+
+//connection 聯絡我們
+.connection-container {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    max-width: 450px;
+  }
+  @media (max-width: 767px) {
+    max-width: 345px;
+  }
+}
+.connection {
+  background: #aa06010d;
+  padding-bottom: 80px;
+  @media (max-width: 992px) {
+    padding-bottom: 40px;
+  }
+  h2 {
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 24px;
+    @media (max-width: 992px) {
+      padding-top: 40px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 32px;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: $Regular-400;
+    color: $font-black;
+    margin-bottom: 20px;
+    @media (max-width: 992px) {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+  }
+  label {
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+  input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    @media (max-width: 992px) {
+      height: 36px;
+      margin-bottom: 8px;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 136px;
+    margin-bottom: 16px;
+    @media (max-width: 992px) {
+      height: 100px;
+    }
+  }
+  .checkbox {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    margin-right: 4px;
+
+    @media (max-width: 992px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .btn {
+    width: 350px;
+    height: 54px;
+    margin: 0 auto;
+    background: $font-primary;
+    color: $font-white;
+    border: none;
+    transition: all ease 0.5s;
+    margin-top: 42px;
+    &:hover {
+      background: $font-secondary;
+    }
+    @media (max-width: 992px) {
+      width: 210px;
+      height: 36px;
+      margin-top: 20px;
+    }
+    @media (max-width: 767px) {
+      width: 165px;
+      margin-top: 24px;
+    }
+  }
+}

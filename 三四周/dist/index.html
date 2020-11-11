@@ -1,88 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>首頁</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/style/scss/all.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/css/all.min.css">
-</head>
+  <body>
+    <header class="header d-flex">
+      <h1 class="logo">
+        <a href="./">眼鏡形象網站</a>
+      </h1>
+      <ul class="nav-bar d-flex">
+        <li class="font-style-s">
+          <a href="series.html" class="nav-bar-list">系列鏡框</a>
+        </li>
+        <li class="font-style-s">
+          <a href="#" class="nav-bar-list">門市據點</a>
+        </li>
+        <li class="font-style-s">
+          <a href="#" class="nav-bar-list">部落格</a>
+        </li>
+        <li class="font-style-s">
+          <a href="#" class="nav-bar-list">常見問題</a>
+        </li>
+      </ul>
+    </header>
 
-<body>
-  <header class="header d-flex">
-    <h1 class="logo">
-        <a href="#">眼鏡形象網站</a>
-    </h1>
-    <ul class="nav-bar d-flex">
-        <li class="font-style-s"><a href="#" class="nav-bar-list">系列鏡框</a></li>
-        <li class="font-style-s"><a href="#" class="nav-bar-list">門市據點</a></li>
-        <li class="font-style-s"><a href="#" class="nav-bar-list">部落格</a></li>
-        <li class="font-style-s"><a href="#" class="nav-bar-list">常見問題</a></li>
-    </ul>
-</header>
-
-  
+    
 <main>
-
+  <div class="banner d-flex">
+    <div class="slogan container">
+      <p>Promise-Desert 2020 早春系列</p>
+      <h2>看得清，才能看得遠</h2>
+    </div>
+  </div>
+  <section class="about">
+    <div class="container">
+      <h2 class="subtitle">用專業的心，做專業的事</h2>
+      <ul class="d-flex jc-space-around fx-ww">
+        <li class="about_item">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-dollar.svg"
+            alt=""
+          />
+          <h2>單一價格</h2>
+          <p>無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+        </li>
+        <li class="about_item">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-clock.svg"
+            alt=""
+          />
+          <h2>20 分鐘即可取件</h2>
+          <p>
+            為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交
+            件的時間縮減至最快 20 分鐘 即可完成。
+          </p>
+        </li>
+        <li class="about_item">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-heart.svg"
+            alt=""
+          />
+          <h2>安心售後服務</h2>
+          <p>
+            我們提供長達 120
+            天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+          </p>
+        </li>
+        <li class="about_item">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-glasses.svg"
+            alt=""
+          />
+          <h2>關於鏡片</h2>
+          <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="series">
+    <div class="container">
+      <h2 class="subtitle">經典系列鏡框</h2>
+      <ul class="">
+        <li class="d-flex">
+          <div class="optical-img d-flex series-Mobile">
+            <img
+              class="mr-8"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-diamond-white.svg"
+              alt=""
+            />
+            <h3 class="series-mobile-h3">OPTICAL</h3>
+          </div>
+          <div class="d-flex align-items-center series-pc-pad">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-diamond.svg"
+              alt=""
+            />
+            <h3 class="series-h3">OPTICAL</h3>
+          </div>
+        </li>
+        <li class="d-flex">
+          <div class="sunglasses-img d-flex series-Mobile">
+            <img
+              class="mr-8"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-sun-white.svg"
+              alt=""
+            />
+            <h3 class="series-mobile-h3">SUNGLASSES</h3>
+          </div>
+          <div class="d-flex align-items-center series-pc-pad">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-sun.svg"
+              alt=""
+            />
+            <h3 class="series-h3">SUNGLASSES</h3>
+          </div>
+        </li>
+        <li class="d-flex">
+          <div class="functional-img d-flex series-Mobile">
+            <img
+              class="mr-8"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-thunder-white.svg"
+              alt=""
+            />
+            <h3 class="series-mobile-h3">FUNCTIONAL</h3>
+          </div>
+          <div class="d-flex align-items-center series-pc-pad">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-thunder.svg"
+              alt=""
+            />
+            <h3 class="series-h3">FUNCTIONAL</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="design">
+    <div class="container">
+      <h2 class="subtitle">聯名設計鏡框</h2>
+      <ul class="d-flex jc-space-between align-items-center">
+        <li
+          class="double-img design-img-size d-flex align-items-center justify-content-center"
+        >
+          <h3>Double A+</h3>
+        </li>
+        <li
+          class="youth-img design-img-size double-img d-flex align-items-center justify-content-center"
+        >
+          <h3>YOUTH</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="recommend container">
+    <h2 class="subtitle">顧客推薦</h2>
+    <ul class="d-flex jc-space-between">
+      <li class="d-flex fxd-c">
+        <img
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true"
+          alt=""
+        />
+        <div class="d-flex fxd-c">
+          <h3>Jessy</h3>
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <h4>Last updated 3 mins ago</h4>
+        </div>
+      </li>
+      <li class="d-flex fxd-c">
+        <img
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-2.png?raw=true"
+          alt=""
+        />
+        <div>
+          <h3>Karen</h3>
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <h4>Last updated 3 mins ago</h4>
+        </div>
+      </li>
+      <li class="d-flex fxd-c">
+        <img
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-3.png?raw=true"
+          alt=""
+        />
+        <div>
+          <h3>Chelsea</h3>
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <h4>Last updated 3 mins ago</h4>
+        </div>
+      </li>
+      <li class="d-flex fxd-c">
+        <img
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-4.png?raw=true"
+          alt=""
+        />
+        <div>
+          <h3>Jane</h3>
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <h4>Last updated 3 mins ago</h4>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="connection">
+    <div class="connection-container">
+      <h2 class="subtitle">聯絡我們</h2>
+      <p>
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      </p>
+      <form action="#">
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name" placeholder="陳小明" dirname/>
+        <label for="tel">聯絡電話</label>
+        <input type="tel" name="tel" id="tel" placeholder="0955-123-456" />
+        <label for="email">電子郵件</label>
+        <input type="email" name="email" id="email" placeholder="xxxx@email.com"/>
+        <label for="suggest">意見反應</label>
+        <textarea name="suggest" id="suggest" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
+        <div class="d-flex ">
+          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox"
+            >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+          >
+        </div>
+        <input type="submit" value="確認送出" class="btn">
+      </form>
+    </div>
+  </section>
 </main>
 
-  <footer class="footer">
-    <div class="footer-content container d-flex">
+
+    <footer class="footer">
+      <div class="footer-content container d-flex">
         <div>
-            <ul class="footer-item d-flex">
-                <li class="font-style-xs"><a href="#">首頁</a></li>
-                <li class="font-style-xs"><a href="#">系列鏡框</a></li>
-                <li class="font-style-xs"><a href="#">門市據點</a></li>
-                <li class="font-style-xs"><a href="#">部落格</a></li>
-                <li class="font-style-xs"><a href="#">常見問題</a></li>
-            </ul>
-            <div class="footer-contact d-flex">
-                <img class="tel-icon"
-                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-phone.svg"
-                    alt="" />
-                <p>0800-000-000</p>
-            </div>
-            <div class="footer-contact d-flex">
-                <img class="mail-icon"
-                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-mail.svg"
-                    alt="" />
-                <p>glasses@business.com</p>
-            </div>
+          <ul class="footer-item d-flex">
+            <li class="font-style-xs"><a href="#">首頁</a></li>
+            <li class="font-style-xs"><a href="#">系列鏡框</a></li>
+            <li class="font-style-xs"><a href="#">門市據點</a></li>
+            <li class="font-style-xs"><a href="#">部落格</a></li>
+            <li class="font-style-xs"><a href="#">常見問題</a></li>
+          </ul>
+          <div class="footer-contact d-flex">
+            <img
+              class="tel-icon"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-phone.svg"
+              alt=""
+            />
+            <p>0800-000-000</p>
+          </div>
+          <div class="footer-contact d-flex">
+            <img
+              class="mail-icon"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-mail.svg"
+              alt=""
+            />
+            <p>glasses@business.com</p>
+          </div>
         </div>
         <ul class="footer-icon d-flex">
-            <li>
-                <a href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-fb.svg"
-                        alt="FB" /></a>
-            </li>
-            <li>
-                <a href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-ig.svg"
-                        alt="IG`" /></a>
-            </li>
-            <li>
-                <a href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-line.svg"
-                        alt="LINE" /></a>
-            </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-fb.svg"
+                alt="FB"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-ig.svg"
+                alt="IG`"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-line.svg"
+                alt="LINE"
+            /></a>
+          </li>
         </ul>
-    </div>
-    <div class="footer-copyright container d-flex">
+      </div>
+      <div class="footer-copyright container d-flex">
         <div class="logo d-flex">
-            <a href="#">LOGO</a>
+          <a href="#">LOGO</a>
         </div>
         <div class="copyright d-flex">
-            <p>Copyright © 2020 Glasses.All rights reserved.</p>
-            <ul class="d-flex">
-                <li ><a  href="#">隱私權政策</a></li>
-                <li ><a  href="#">服務條款</a></li>
-            </ul>
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="d-flex">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+          </ul>
         </div>
-    </div>
-</footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 </html>
