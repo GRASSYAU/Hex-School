@@ -89,7 +89,7 @@
   }
 }
 
-#all .series-glasses {
+.all .series-glasses {
   display: none;
   //banner
   .series-banner {
@@ -213,7 +213,8 @@
   }
 }
 
-#all .series-glasses2 {
+.all .series-glasses2 {
+  display: none;
   //banner
   .series-banner {
     justify-content: space-between;
@@ -346,6 +347,6 @@
   }
 }
 
-#all .open {
+.all .open {
   display: block;
 }

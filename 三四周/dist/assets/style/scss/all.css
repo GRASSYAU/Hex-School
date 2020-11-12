@@ -910,82 +910,82 @@ main .about {
     .series-nav .li-hover {
       border-bottom: 4px solid #aa0601; } }
 
-#all .series-glasses {
+.all .series-glasses {
   display: none; }
-  #all .series-glasses .series-banner {
+  .all .series-glasses .series-banner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 88px; }
     @media (max-width: 992px) {
-      #all .series-glasses .series-banner {
+      .all .series-glasses .series-banner {
         margin-bottom: 40px; } }
     @media (max-width: 767px) {
-      #all .series-glasses .series-banner {
+      .all .series-glasses .series-banner {
         margin-bottom: 30px; } }
-    #all .series-glasses .series-banner .series-banner-img1 {
+    .all .series-glasses .series-banner .series-banner-img1 {
       background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-1.png?raw=true") center center no-repeat;
       background-size: cover; }
-    #all .series-glasses .series-banner .series-banner-img2 {
+    .all .series-glasses .series-banner .series-banner-img2 {
       background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-2.png?raw=true") center center no-repeat;
       background-size: cover; }
-  #all .series-glasses .series-products {
+  .all .series-glasses .series-products {
     text-align: center; }
     @media (max-width: 767px) {
-      #all .series-glasses .series-products .products {
+      .all .series-glasses .series-products .products {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-    #all .series-glasses .series-products .products-item {
+    .all .series-glasses .series-products .products-item {
       width: 255px;
       margin-bottom: 104px; }
       @media (max-width: 992px) {
-        #all .series-glasses .series-products .products-item {
+        .all .series-glasses .series-products .products-item {
           width: 330px;
           margin-bottom: 72px; }
-          #all .series-glasses .series-products .products-item:nth-child(11), #all .series-glasses .series-products .products-item:nth-child(12) {
+          .all .series-glasses .series-products .products-item:nth-child(11), .all .series-glasses .series-products .products-item:nth-child(12) {
             display: none; } }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products .products-item {
+        .all .series-glasses .series-products .products-item {
           width: 345px;
           margin-bottom: 69px; }
-          #all .series-glasses .series-products .products-item:nth-child(5), #all .series-glasses .series-products .products-item:nth-child(6), #all .series-glasses .series-products .products-item:nth-child(7), #all .series-glasses .series-products .products-item:nth-child(8), #all .series-glasses .series-products .products-item:nth-child(9), #all .series-glasses .series-products .products-item:nth-child(10), #all .series-glasses .series-products .products-item:nth-child(11), #all .series-glasses .series-products .products-item:nth-child(12) {
+          .all .series-glasses .series-products .products-item:nth-child(5), .all .series-glasses .series-products .products-item:nth-child(6), .all .series-glasses .series-products .products-item:nth-child(7), .all .series-glasses .series-products .products-item:nth-child(8), .all .series-glasses .series-products .products-item:nth-child(9), .all .series-glasses .series-products .products-item:nth-child(10), .all .series-glasses .series-products .products-item:nth-child(11), .all .series-glasses .series-products .products-item:nth-child(12) {
             display: none; } }
-    #all .series-glasses .series-products h4 {
+    .all .series-glasses .series-products h4 {
       font-size: 24px;
       font-family: "Roboto", sans-serif;
       font-weight: 400; }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products h4 {
+        .all .series-glasses .series-products h4 {
           font-size: 16px; } }
-    #all .series-glasses .series-products h5 {
+    .all .series-glasses .series-products h5 {
       font-size: 24px;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       color: #aa0601; }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products h5 {
+        .all .series-glasses .series-products h5 {
           font-size: 16px; } }
-    #all .series-glasses .series-products .products-color-1 {
+    .all .series-glasses .series-products .products-color-1 {
       width: 24px;
       height: 24px;
       background: #5f3e2d;
       border-radius: 4px; }
-    #all .series-glasses .series-products .products-color-2 {
+    .all .series-glasses .series-products .products-color-2 {
       width: 24px;
       height: 24px;
       background: #b75929;
       border-radius: 4px; }
-    #all .series-glasses .series-products .series-page li {
+    .all .series-glasses .series-products .series-page li {
       border: 1px solid #555555;
       margin-bottom: 156px; }
       @media (max-width: 992px) {
-        #all .series-glasses .series-products .series-page li {
+        .all .series-glasses .series-products .series-page li {
           margin-bottom: 104px; } }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products .series-page li {
+        .all .series-glasses .series-products .series-page li {
           margin-bottom: 56px; } }
-    #all .series-glasses .series-products .series-page a {
+    .all .series-glasses .series-products .series-page a {
       display: block;
       font-size: 19px;
       padding: 10px 12px 12px 12px;
@@ -994,128 +994,129 @@ main .about {
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products .series-page a {
+        .all .series-glasses .series-products .series-page a {
           font-size: 12px;
           padding: 8px 10px; } }
-      #all .series-glasses .series-products .series-page a:hover {
+      .all .series-glasses .series-products .series-page a:hover {
         background: #000;
         color: #fff; }
-    #all .series-glasses .series-products .series-page .series-page-list {
+    .all .series-glasses .series-products .series-page .series-page-list {
       font-size: 18px;
       padding: 10px 17px 13px 14px; }
       @media (max-width: 767px) {
-        #all .series-glasses .series-products .series-page .series-page-list {
+        .all .series-glasses .series-products .series-page .series-page-list {
           font-size: 11px;
           padding: 8px 10px; } }
 
-#all .series-glasses2 .series-banner {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 88px; }
-  @media (max-width: 992px) {
-    #all .series-glasses2 .series-banner {
-      margin-bottom: 40px; } }
-  @media (max-width: 767px) {
-    #all .series-glasses2 .series-banner {
-      margin-bottom: 30px; } }
-  #all .series-glasses2 .series-banner .series-banner-img1 {
-    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true") center center no-repeat;
-    background-size: cover; }
-  #all .series-glasses2 .series-banner .series-banner-img2 {
-    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true") center center no-repeat;
-    background-size: cover; }
-
-#all .series-glasses2 .series-products {
-  text-align: center; }
-  @media (max-width: 767px) {
-    #all .series-glasses2 .series-products .products {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
-  #all .series-glasses2 .series-products .products-item {
-    width: 350px;
-    margin-bottom: 104px; }
-    #all .series-glasses2 .series-products .products-item:nth-child(7), #all .series-glasses2 .series-products .products-item:nth-child(8), #all .series-glasses2 .series-products .products-item:nth-child(9), #all .series-glasses2 .series-products .products-item:nth-child(10) {
-      display: none; }
+.all .series-glasses2 {
+  display: none; }
+  .all .series-glasses2 .series-banner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 88px; }
     @media (max-width: 992px) {
-      #all .series-glasses2 .series-products .products-item {
-        width: 330px;
-        margin-bottom: 72px; }
-        #all .series-glasses2 .series-products .products-item:nth-child(11), #all .series-glasses2 .series-products .products-item:nth-child(12) {
-          display: none; } }
+      .all .series-glasses2 .series-banner {
+        margin-bottom: 40px; } }
     @media (max-width: 767px) {
-      #all .series-glasses2 .series-products .products-item {
-        width: 345px;
-        margin-bottom: 69px; }
-        #all .series-glasses2 .series-products .products-item:nth-child(4), #all .series-glasses2 .series-products .products-item:nth-child(5), #all .series-glasses2 .series-products .products-item:nth-child(6), #all .series-glasses2 .series-products .products-item:nth-child(7), #all .series-glasses2 .series-products .products-item:nth-child(8), #all .series-glasses2 .series-products .products-item:nth-child(9), #all .series-glasses2 .series-products .products-item:nth-child(10) {
-          display: none; } }
-  #all .series-glasses2 .series-products div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    #all .series-glasses2 .series-products div h4 {
-      font-size: 24px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400; }
+      .all .series-glasses2 .series-banner {
+        margin-bottom: 30px; } }
+    .all .series-glasses2 .series-banner .series-banner-img1 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true") center center no-repeat;
+      background-size: cover; }
+    .all .series-glasses2 .series-banner .series-banner-img2 {
+      background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true") center center no-repeat;
+      background-size: cover; }
+  .all .series-glasses2 .series-products {
+    text-align: center; }
+    @media (max-width: 767px) {
+      .all .series-glasses2 .series-products .products {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .all .series-glasses2 .series-products .products-item {
+      width: 350px;
+      margin-bottom: 104px; }
+      .all .series-glasses2 .series-products .products-item:nth-child(7), .all .series-glasses2 .series-products .products-item:nth-child(8), .all .series-glasses2 .series-products .products-item:nth-child(9), .all .series-glasses2 .series-products .products-item:nth-child(10) {
+        display: none; }
+      @media (max-width: 992px) {
+        .all .series-glasses2 .series-products .products-item {
+          width: 330px;
+          margin-bottom: 72px; }
+          .all .series-glasses2 .series-products .products-item:nth-child(11), .all .series-glasses2 .series-products .products-item:nth-child(12) {
+            display: none; } }
       @media (max-width: 767px) {
-        #all .series-glasses2 .series-products div h4 {
-          font-size: 16px; } }
-    #all .series-glasses2 .series-products div h5 {
-      font-size: 24px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      color: #aa0601; }
+        .all .series-glasses2 .series-products .products-item {
+          width: 345px;
+          margin-bottom: 69px; }
+          .all .series-glasses2 .series-products .products-item:nth-child(4), .all .series-glasses2 .series-products .products-item:nth-child(5), .all .series-glasses2 .series-products .products-item:nth-child(6), .all .series-glasses2 .series-products .products-item:nth-child(7), .all .series-glasses2 .series-products .products-item:nth-child(8), .all .series-glasses2 .series-products .products-item:nth-child(9), .all .series-glasses2 .series-products .products-item:nth-child(10) {
+            display: none; } }
+    .all .series-glasses2 .series-products div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .all .series-glasses2 .series-products div h4 {
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400; }
+        @media (max-width: 767px) {
+          .all .series-glasses2 .series-products div h4 {
+            font-size: 16px; } }
+      .all .series-glasses2 .series-products div h5 {
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #aa0601; }
+        @media (max-width: 767px) {
+          .all .series-glasses2 .series-products div h5 {
+            font-size: 16px; } }
+    .all .series-glasses2 .series-products .products-color-1 {
+      width: 24px;
+      height: 24px;
+      background: #5f3e2d;
+      border-radius: 4px; }
+    .all .series-glasses2 .series-products .products-color-2 {
+      width: 24px;
+      height: 24px;
+      background: #b75929;
+      border-radius: 4px; }
+    .all .series-glasses2 .series-products .series-page li {
+      border: 1px solid #555555;
+      margin-bottom: 156px; }
+      @media (max-width: 992px) {
+        .all .series-glasses2 .series-products .series-page li {
+          margin-bottom: 104px; } }
       @media (max-width: 767px) {
-        #all .series-glasses2 .series-products div h5 {
-          font-size: 16px; } }
-  #all .series-glasses2 .series-products .products-color-1 {
-    width: 24px;
-    height: 24px;
-    background: #5f3e2d;
-    border-radius: 4px; }
-  #all .series-glasses2 .series-products .products-color-2 {
-    width: 24px;
-    height: 24px;
-    background: #b75929;
-    border-radius: 4px; }
-  #all .series-glasses2 .series-products .series-page li {
-    border: 1px solid #555555;
-    margin-bottom: 156px; }
-    @media (max-width: 992px) {
-      #all .series-glasses2 .series-products .series-page li {
-        margin-bottom: 104px; } }
-    @media (max-width: 767px) {
-      #all .series-glasses2 .series-products .series-page li {
-        margin-bottom: 56px; } }
-  #all .series-glasses2 .series-products .series-page a {
-    display: block;
-    font-size: 19px;
-    padding: 10px 12px 12px 12px;
-    color: #000;
-    -webkit-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s; }
-    @media (max-width: 767px) {
-      #all .series-glasses2 .series-products .series-page a {
-        font-size: 12px;
-        padding: 8px 10px; } }
-    #all .series-glasses2 .series-products .series-page a:hover {
-      background: #000;
-      color: #fff; }
-  #all .series-glasses2 .series-products .series-page .series-page-list {
-    font-size: 18px;
-    padding: 10px 17px 13px 14px; }
-    @media (max-width: 767px) {
-      #all .series-glasses2 .series-products .series-page .series-page-list {
-        font-size: 11px;
-        padding: 8px 10px; } }
+        .all .series-glasses2 .series-products .series-page li {
+          margin-bottom: 56px; } }
+    .all .series-glasses2 .series-products .series-page a {
+      display: block;
+      font-size: 19px;
+      padding: 10px 12px 12px 12px;
+      color: #000;
+      -webkit-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
+      @media (max-width: 767px) {
+        .all .series-glasses2 .series-products .series-page a {
+          font-size: 12px;
+          padding: 8px 10px; } }
+      .all .series-glasses2 .series-products .series-page a:hover {
+        background: #000;
+        color: #fff; }
+    .all .series-glasses2 .series-products .series-page .series-page-list {
+      font-size: 18px;
+      padding: 10px 17px 13px 14px; }
+      @media (max-width: 767px) {
+        .all .series-glasses2 .series-products .series-page .series-page-list {
+          font-size: 11px;
+          padding: 8px 10px; } }
 
-#all .open {
+.all .open {
   display: block; }
 
 /*# sourceMappingURL=all.css.map */
