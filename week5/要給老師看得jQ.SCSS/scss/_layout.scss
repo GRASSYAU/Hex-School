@@ -1,0 +1,60 @@
+.nav-font-color {
+  color: $font-secondary;
+}
+
+.nav {
+  padding: 32px;
+}
+
+.nav-active {
+  color: $font-secondary;
+  position: relative;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -32px;
+    bottom: 0;
+    width: 4px;
+    height: 32px;
+    z-index: 2;
+    background:$font-secondary;
+  }
+}
+
+.main{
+  margin-left: auto;
+  padding: 32px;
+}
+
+.menu {
+  margin-top: 30px;
+  a{
+    display: block;
+    padding: 15px 0px;
+    transition: .2s ;
+    &:hover {
+      color: $font-secondary;
+    }
+  }
+  
+  i {
+    margin-right: 16px;
+  }
+}
+
+.user{
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  h2{
+    font-size: $font-size-base;
+    font-weight: $Bold-700;
+  }
+  p{
+    font-size: $font-size-sm;
+    color: #0000009A;
+  }
+}

@@ -1,0 +1,42 @@
+.table th, .table td{
+    border-top: none;
+    border-bottom:1px solid #CDDDCD;
+    
+}
+
+tbody tr:hover{
+    background: #EDF4EE !important;
+}
+
+.page-link{
+    border-color:#2A8356;
+    // background: #2A8356;
+    
+    &:hover{
+        background: #2A8356;
+        color: #fff;
+    }
+}
+.page{
+    width: 32px;
+    height: 32px;
+}
+
+.modal-header{
+    border:none;
+}
+
+.active{
+    transition: 1s;
+    transform: rotate(-180deg);
+}
+
+.photo{
+    width: 141px;
+    height: 141px;
+}
+
+.toggle-admin{
+    display: none;
+    padding-top: 30px;
+}

@@ -1,0 +1,27 @@
+//font-family
+$font-family-Lato:'Lato', sans-serif;
+$font-family-Roboto-Mono:'Roboto Mono', monospace;
+//font-weight
+$Regular-400: 400;
+$Medium-500: 500;
+$Bold-700: 700;
+$Black-900: 900;
+
+//font-color
+$font-primary: #EDF4EE;
+$font-secondary: #2A8356;
+$font-white: #ffffff;
+$font-black: #121212;
+
+//字體大小
+$font-size-base: 1rem; //16px
+
+$font-size-xs: $font-size-base * 0.750; //12px
+$font-size-sm: $font-size-base * 0.875; //14px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px

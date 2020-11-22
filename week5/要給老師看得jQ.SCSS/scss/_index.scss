@@ -1,0 +1,42 @@
+.header {
+  h2 {
+    font-size: $h4-font-size;
+    font-weight: $Bold-700;
+  }
+}
+.border-round {
+  border: 1px solid #cdddcd;
+}
+.assignment-active {
+  color: #000;
+  background: $font-primary;
+}
+.list-group-item:hover {
+  background: $font-primary;
+}
+
+hr {
+  background: #cdddcd;
+}
+
+code {
+  font-family: $font-family-Roboto-Mono;
+  background: $font-primary;
+  color: #2a8356;
+  padding: 0px 4px;
+  font-size: 14px;
+}
+
+.btn:focus /*清除btn按钮点击出现的边框*/ {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea{
+  border: none;
+  outline: none;
+}
+
+.d-none-2{
+  display: none;
+}
