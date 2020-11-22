@@ -8821,8 +8821,7 @@ p, ul {
 
 .nav-active {
   color: #2A8356;
-  position: relative;
-  padding: 8px 0px; }
+  position: relative; }
   .nav-active::before {
     content: "";
     position: absolute;

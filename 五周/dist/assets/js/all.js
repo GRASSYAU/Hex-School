@@ -32,7 +32,7 @@ $("#btn-Cancel").click(function (e) {
 // })
 
 var url = window.location.pathname;
-$('.menu li').find('a').each(function () {
+$('.menu li a').each(function () {
   $(this).toggleClass('nav-active', $(this).attr('href') == url.split('/')[1]);
 });
 $("#qwe").click(function () {
