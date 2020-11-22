@@ -9,7 +9,7 @@ $("#btn-Cancel").click(function (e) {
   e.preventDefault();
   $(".abc").slideDown();
   $(".xxx").addClass("animate__animated animate__lightSpeedInRight").hide();
-}); // // $(".menu li").find("a").eq(2).addClass("nav-active")
+}); // $(".menu li").find("a").eq(2).addClass("nav-active")
 // $(".menu li").click(function (e) {
 //   var now = $(this).index();
 //   $(".menu li").find("a").removeClass("nav-active")
@@ -18,8 +18,9 @@ $("#btn-Cancel").click(function (e) {
 // })
 
 var url = window.location.pathname;
-$('.menu li a').each(function () {
-  $(this).toggleClass('nav-active', $(this).attr('href') == url.split('/')[1]);
+console.log(url);
+$(".menu li ").find("a").each(function () {
+  $(this).toggleClass("nav-active", $(this).attr("href") == url.split("/Hex-School/week5/")[1]);
 });
 $("#qwe").click(function () {
   $(".toggle-admin").stop(true, false).slideToggle();
