@@ -33,7 +33,7 @@ $("#btn-Cancel").click(function (e) {
 
 var url = window.location.pathname;
 $('.menu li a').each(function () {
-  $(this).toggleClass('nav-active', $(this).attr('href') == url.split('/')[1]);
+  $(this).toggleClass('nav-active', $(this).attr('href') == url.split('/Hex-School/五周/')[1]);
 });
 $("#qwe").click(function () {
   $(".toggle-admin").stop(true, false).slideToggle();
