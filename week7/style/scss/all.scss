@@ -1,0 +1,212 @@
+// font weith
+$font-weith-s: 500;
+$font-weith-m: 700;
+$font-weith-l: 900;
+//font size
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-64: 64px;
+$font-size-80: 80px;
+//font color
+$font-color-f: #ffffff; //白色
+$font-color-b: #000000; //黑色
+$font-color-g: #707070; //灰色
+$font-color-r: #891818; //紅色
+//line-height
+$line-height-30: 1.5; //20*1.5=30px
+$line-height-36: 1.5; //24*1.5=36px
+$line-height-42: 42px;
+$line-height-75: 75px;
+
+//共用
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden; // 在 body 加上 overflow-x: hidden; 來確保頁面在圖片滾動進入之前不會因此出現 x 軸喔
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+.font-style-s {
+  font-size: $font-size-24;
+  font-weight: $font-weith-m;
+  line-height: $line-height-36;
+}
+.font-style-xs {
+  font-size: $font-size-20;
+  font-weight: $font-weith-s;
+  line-height: $line-height-30;
+}
+.font-style-m {
+  font-size: $font-size-24;
+  font-weight: $font-weith-m;
+  line-height: $line-height-42;
+}
+.font-style-l {
+  font-size: $font-size-64;
+  font-weight: $font-weith-s;
+  line-height: $line-height-75;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+//header
+.banner {
+  width: 100%;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  height: 958px;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid $font-color-g;
+  color: $font-color-f;
+  margin-bottom: 64px;
+  .banner-content {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+  .font-style-xl {
+    font-size: $font-size-80;
+    font-weight: $font-weith-l;
+    line-height: 94px;
+    padding-bottom: 32px;
+  }
+  .i-con li {
+    margin-right: 16px;
+  }
+  a {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.about {
+  text-align: center;
+  h2 {
+    margin-bottom: 40px;
+  }
+  img {
+    margin-bottom: 24px;
+  }
+  .personal {
+    padding-bottom: 24px;
+    p {
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        color: $font-color-r;
+      }
+    }
+  }
+  .resume {
+    width: 384px;
+    margin: 0 auto;
+    padding-bottom: 56px;
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #000;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        color: $font-color-r;
+      }
+      i {
+        font-size: 22px;
+        padding-right: 16px;
+        color: $font-color-r;
+      }
+    }
+  }
+}
+
+.brand {
+  text-align: center;
+  color: $font-color-f;
+  background: $font-color-b;
+  margin-bottom: 64px;
+  padding-top: 64px;
+  .font-style-l {
+    padding-bottom: 16px;
+  }
+  .font-style-m {
+    font-weight: $font-weith-s;
+    padding-bottom: 32px;
+  }
+  .font-style-xs {
+    padding-bottom: 68px;
+  }
+  .brand_img{
+    padding-bottom: 160px;
+    .img-1{
+    padding-bottom: 40px;
+    }
+    .img-2{
+      padding-right: 24px;
+    }
+  }
+    
+}
+.otherworks {
+  text-align: center;
+  padding-bottom: 104px;
+  .font-style-l {
+    padding-bottom: 24px;
+  } 
+  .font-style-xs {
+    padding-bottom: 56px;
+  }
+  .works-item {
+    flex-wrap: wrap;
+    .item {
+      margin: 0 auto;
+      font-size: $font-size-20;
+      font-weight: $font-weith-s;
+      line-height: $line-height-42;
+      margin-bottom: 56px;
+      a {
+        color: $font-color-b;
+        transition: all .3s ease;
+        &:hover {
+            color: $font-color-r;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: $font-color-b;
+  color: $font-color-f;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  li {
+    font-weight: $font-weith-s;
+    padding-bottom: 16px;
+  }
+  a {
+    color: $font-color-f;
+    transition: all .3s ease;
+        &:hover {
+            color: $font-color-r;
+        }
+  }
+}

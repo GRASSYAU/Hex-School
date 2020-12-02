@@ -1,0 +1,244 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.font-style-s {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.font-style-xs {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.font-style-m {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.font-style-l {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  height: 958px;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid #707070;
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+
+.banner .banner-content {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.banner .font-style-xl {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 94px;
+  padding-bottom: 32px;
+}
+
+.banner .i-con li {
+  margin-right: 16px;
+}
+
+.banner a {
+  display: block;
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+}
+
+.about img {
+  margin-bottom: 24px;
+}
+
+.about .personal {
+  padding-bottom: 24px;
+}
+
+.about .personal p {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about .personal p:hover {
+  color: #891818;
+}
+
+.about .resume {
+  width: 384px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+  padding-top: 24px;
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.about .resume li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.about .resume li:hover {
+  color: #891818;
+}
+
+.about .resume li i {
+  font-size: 22px;
+  padding-right: 16px;
+  color: #891818;
+}
+
+.brand {
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+  margin-bottom: 64px;
+  padding-top: 64px;
+}
+
+.brand .font-style-l {
+  padding-bottom: 16px;
+}
+
+.brand .font-style-m {
+  font-weight: 500;
+  padding-bottom: 32px;
+}
+
+.brand .font-style-xs {
+  padding-bottom: 68px;
+}
+
+.brand .brand_img {
+  padding-bottom: 160px;
+}
+
+.brand .brand_img .img-1 {
+  padding-bottom: 40px;
+}
+
+.brand .brand_img .img-2 {
+  padding-right: 24px;
+}
+
+.otherworks {
+  text-align: center;
+  padding-bottom: 104px;
+}
+
+.otherworks .font-style-l {
+  padding-bottom: 24px;
+}
+
+.otherworks .font-style-xs {
+  padding-bottom: 56px;
+}
+
+.otherworks .works-item {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.otherworks .works-item .item {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 56px;
+}
+
+.otherworks .works-item .item a {
+  color: #000000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.otherworks .works-item .item a:hover {
+  color: #891818;
+}
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.footer li {
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.footer a {
+  color: #ffffff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer a:hover {
+  color: #891818;
+}
+/*# sourceMappingURL=all.css.map */
