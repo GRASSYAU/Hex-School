@@ -1,6 +1,7 @@
 *::before,
 *::active {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -11,8 +12,12 @@
 
 header .header {
   background: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 8px;
 }
 
@@ -37,8 +42,12 @@ header .header .twi:hover {
 }
 
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
 }
 
@@ -53,14 +62,19 @@ header nav h1 a {
 }
 
 header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .menu a {
   color: #03cc99;
   padding: 10px 20px;
   border-bottom: 3px solid transparent;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   display: block;
 }
@@ -104,23 +118,30 @@ main .banner h2 {
 }
 
 main .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 100px;
 }
 
 main .info .info-item {
   width: 300px;
-  box-shadow: 0px 0px 5px #b7b8b5;
+  -webkit-box-shadow: 0px 0px 5px #b7b8b5;
+          box-shadow: 0px 0px 5px #b7b8b5;
   padding: 10px;
   line-height: 1.5;
   letter-spacing: 2px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 main .info .info-item:hover {
-  box-shadow: 0px 0px 15px gray;
+  -webkit-box-shadow: 0px 0px 15px gray;
+          box-shadow: 0px 0px 15px gray;
 }
 
 main .info .info-item a {
@@ -174,6 +195,7 @@ main .compare table td {
 main .form-data {
   width: 994px;
   margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00664b), to(#009972));
   background: linear-gradient(#00664b, #009972);
 }
 
@@ -186,8 +208,12 @@ main .form-data h2 {
 }
 
 main .form-data .form-data-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
   padding: 30px;
 }
@@ -240,10 +266,16 @@ main .form-data .form-data-item .form-data-detail button:hover {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer ul {
@@ -253,6 +285,7 @@ footer ul {
 
 footer ul a {
   color: #e84589;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -262,11 +295,12 @@ footer ul a:hover {
 
 .top {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 50px;
+  right: 100px;
 }
 
 .top .fa-hand-pointer {
-  font-size: 200px;
+  font-size: 100px;
   color: #00cc98;
 }
+/*# sourceMappingURL=HTML最終.css.map */

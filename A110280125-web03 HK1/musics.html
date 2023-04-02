@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A110280125 HK(1)</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="col text-center font-weight-bold fs-1">
+        <div>
+            <a href="index.html"><strong>楊凱傑 HK01</strong></a>
+        </div>
+    </header>
+    <nav class="navbar bg-2 justify-content-center">
+        <a href="index.html"><button type="button" class="btn btn-outline-light ms-3 me-3">Home</button></a>
+        <a href="photos.html"><button type="button" class="btn btn-outline-light me-3">照片輪播</button></a>
+        <a href="musics.html"><button type="button" class="btn btn-outline-light me-3">聽音樂</button></a>
+        <a href="videos.html"><button type="button" class="btn btn-outline-light me-3">看影片</button></a>
+    </nav>
+    <main class="container-fluid bg-3">
+        <div class="row">
+            <div class="col">
+                <center>
+                    <marquee class="fs-2" id="info">歡迎與我一起聽歌 ~!!</marquee>
+                </center>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="padding-top:5%">
+            <div class="mx-auto">
+                <h3 class="text-center mt-4 fs-1 animate__animated animate__bounce animate__infinite">
+                    <div>
+                        <strong>THE FIRST TAKE音樂欣賞</strong>
+                    </div>
+                </h3>
+                <audio id="music_play1" src="musics/Music1.mp3"></audio>
+                <audio id="music_play2" src="musics/Music2.mp3"></audio>
+                <audio id="music_play3" src="musics/Music3.mp3"></audio>
+                <audio id="music_play4" src="musics/Music4.mp3"></audio>
+                <audio id="music_play5" src="musics/Music5.mp3"></audio>
+                <audio id="music_play6" src="musics/Music6.mp3"></audio>
+                <center style="padding-top:10%; ">
+                    <!-- 點擊時 執行 play() -->
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="start();">播放音樂
+                        &#127925</button>
+                    <!-- 點擊時 執行 pause() -->
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="pause();">暫停播放
+                        &#9208</button>
+                    <!-- 點擊時 執行 next() -->
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="next();">播放下一首 &#9193
+                    </button>
+                    <!-- 點擊時 執行 previous() -->
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="previous();">
+                        播放前一首 &#9194
+                    </button>
+                    <!--- 音量大小調整 -->
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="upVolume();">聲音放大
+                        &#128266</button>
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="downVolume();">聲音降
+                        低 &#128265</button>
+                    <p>
+                        <font size="5" class="animate__animated animate__fadeIn  animate__infinite">該首音樂 時間全長 : </font><span id="dur_time"></span><br>
+                        <span>
+                            <font size="5" class="animate__animated animate__fadeIn  animate__infinite">目前已播放時間 : </font>
+                        </span><span id="cur_time"></span>
+                    </p>
+                </center>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-1 py-5">
+        <div class="row mx-0 justify-content-center align-items-center w-100">
+            <div class="text-center text-light fs-2 w-50">
+                <div>
+                    <strong>日資二甲</strong>
+                </div>
+                <div>
+                    <strong>學號:A110280125</strong><br />
+                    <strong>GrassYau</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- my JavaScript code -->
+    <script type="text/javascript" src="js/musicplay.js"></script>
+</body>
+
+</html>

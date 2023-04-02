@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A110280125 HK(1)</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header class="col text-center font-weight-bold fs-1">
+        <div>
+            <a href="index.html"><strong>楊凱傑 HK01</strong></a>
+        </div>
+    </header>
+    <nav class="navbar bg-2 justify-content-start">
+        <a href="index.html"><button type="button" class="btn btn-outline-light ms-3 me-3">Home</button></a>
+        <a href="photos.html"><button type="button" class="btn btn-outline-light me-3">照片輪播</button></a>
+        <a href="musics.html"><button type="button" class="btn btn-outline-light me-3">聽音樂</button></a>
+        <a href="videos.html"><button type="button" class="btn btn-outline-light me-3">看影片</button></a>
+    </nav>
+    <main class="container-fluid bg-3">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+                <h3 class="text-center mt-4">隨機輪播的照片</h3>
+                <div id="ran_div" onload="randomImg()"></div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <h3 class="text-center mt-4">依序輪播的照片</h3>
+                <div id="seq_div" onload="sequentialImg()"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-1 py-5">
+        <div class="row mx-0 justify-content-center align-items-center w-100">
+            <div class="text-center text-light fs-2 w-50">
+                <div>
+                    <strong>日資二甲</strong>
+                </div>
+                <div>
+                    <strong>學號:A110280125</strong><br />
+                    <strong>GrassYau</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/photoplay.js"></script>
+</body>
+
+</html>
