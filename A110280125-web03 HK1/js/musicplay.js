@@ -6,7 +6,7 @@ play4=document.getElementById("music_play4");
 play5=document.getElementById("music_play5");
 // play6=document.getElementById("music_play6");
 musicList = [play1, play2, play3, play4, play5];
-musicListName = ["第一首音樂 ", "第二首音樂 ", "第三首音樂 ", "第四首音樂 ", "第五首音樂 "];
+musicListName = ["Aimer - 残響散歌", "LiSA - 炎", "LiSA - 紅蓮華", "Mezase Pokémon Master -with my friends", "YOASOBI - 群青"];
 var index =0;
 // 點擊播放
 function start() {
